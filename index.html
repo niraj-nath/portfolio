@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/c375abe9e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/niraj.png" alt="name" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#others">Others</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, i'm <span>niraj</span><br> nath from nepal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/profile.png" alt="profile">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>My name is niraj nath.I am a web developer.Currently i am seeking a challenging position in technical field environment to fully utilize my knoeledge, skills and contribute to overall growth of the vibrant organization. I have a sound knowledge of HTML, CSS, Javascript and React.js. My problem solving, Adaptability,Team-work and Sound Judgement skills indicate my ability to work well with others and grow within the company.I have completed my graduation from Tulas's institute of technology and management dehradun, uttarakhand, India. My hobbies are playing chess and fishing.I am from baitadi nepal.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical skills</p>
+                        <p class="tab-links" onclick="opentab('certificate')">certificate</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+                    </div>
+                    <div class="tab-contents active-tag" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br></li>
+                            <li><span>CSS</span><br></li>
+                            <li><span>JAVASCRIPT</span><br></li>
+                            <li><span>REACT.JS</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificate">
+                        <ul>
+                            <li><span>science exhibition</span><br>Lead the team and enhance the students and other guest intterest in science and technology</li>
+                            <li><span>Java programming language certificate</span><br>Learn the programming skills ,project management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B-tech</span><br>Tula's institue of technology and management dehradun uttarakhand</li>
+                            <li><span>HSEB</span><br>Radiant higher secondary school mahendranagar kanchanpur</li>
+                            <li><span>SLC</span><br>Far west regional police boarding school dhangadi kailai</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam consequatur velit incidunt deserunt eveniet saepe atque eius rerum earum ex sit voluptatibus unde vel repudiandae, omnis ipsam recusandae explicabo libero!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In numquam fuga ullam. Fugiat dolorum ad harum sit praesentium placeat magni ratione error aperiam necessitatibus doloribus eos, minus vitae voluptatibus quo.</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/weather.jpg" class="img">
+                    <div class="layer">
+                        <h3>Web application</h3>
+                        <p>weather web application based on <i>html5, css, javascript</i></p>
+                        <a href="\weather\index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/todo.jpg"class="img">
+                    <div class="layer">
+                        <h3>web application</h3>
+                        <p>ToDo web application based on <i>html5, css, javascript</i></p>
+                        <a href="\todolist\index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/wo3.jpg"class="img">
+                    <div class="layer">
+                        <h3>web application</h3>
+                        <p>portfolio web application based on <i>html5, css, javascript</i></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact</h1>
+                    <a href="mailto:nirajnath1998@gmail.com" class="mailph"><i class="fa-solid fa-paper-plane"></i>nirajnath1998@gmail.com</a>
+                    <a href="tel:+977-9848560933" class="mailph"><i class="fa-solid fa-phone"></i>+977-9848560933</a>
+                    <!-- <p><i class="fa-solid fa-paper-plane"></i>nirajnath1998@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+977-9848560933</p> -->
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/niraj-nath-a052aa155"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/niraj-nath"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100013013832646"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="image/niraj_yogi_resume.pdf" download class="btn btn2" target="_blank">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Emai" required>
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright by niraj. this website is made by <i class="fa-solid fa-heart"></i>niraj nath</p>
+        </div>
+    </div>
+
+    <!-- java script code for normal  -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tag");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tag");
+        }
+    </script>
+
+<!-- javascript code for small screen -->
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+<!-- connection -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw9a4vq7-skhHPDPjZzkt546bq9icT7X162NsYWRQVU1kWd8_FNl1RT_J6VhfYQ25vI0Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML="Message sent sucessfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        }, 2000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
